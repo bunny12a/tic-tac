@@ -1,0 +1,92 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Press Start 2P', cursive;
+
+}
+body{
+  background-image:url(back.jpg) ;
+  background-size: cover;
+  text-align: center;
+
+}
+header{
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ h1 {
+   font-size: 54px;
+  color: yellow;
+  text-shadow: 3px 3px#1b1b1b;
+  position: relative;
+  animation: float 5s infinite;
+}
+@keyframes float {
+  0%,100%{
+    transform: translateY(0);
+  }
+  50%{
+    transform:translateY(-25px);
+  }
+}
+.container{
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.game{
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  border: none;
+  border-radius: 5%;
+}
+.box{
+  background-color: #a9db95;
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 15%;
+  box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.3); 
+  color:#0c0c0a ;
+  font-size: 9vmin;
+}
+.reset{
+  background: #6fee34;
+  font-family: inherit;
+  padding: 0.6em 1.3em;
+  font-weight: 900;
+  font-size: 18px;
+  border: 3px solid black;
+  border-radius: 0.4em;
+  box-shadow: 0.1em 0.1em;
+  cursor: pointer;
+}
+
+.reset:hover {
+  transform: translate(-0.05em, -0.05em);
+  box-shadow: 0.15em 0.15em;
+}
+
+.reset:active {
+  transform: translate(0.05em, 0.05em);
+  box-shadow: 0.05em 0.05em;
+}
+
+.win{
+  font-size: 10vmin ;
+  animation: up 3s ease-in;
+}
+@keyframes up {
+  0% {
+    transform: translate(+30px);
+  }
+  100%{
+    transform: translate(0px);
+  }
+}
